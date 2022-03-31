@@ -1,0 +1,25 @@
+@import "./variable";
+@import "./mixin";
+
+// @font-face {
+//   font-family: "Montserrat";
+//   font-weight: normal;
+//   font-display: swap;
+//   src: local("Montserrat Light"), local("Montserrat-Light"),
+//     url("..\\shared\\assets\\font\\montserrat\\Montserrat-Light.ttf") format("truetype"); // use escape character
+// }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+html {
+  font-size:5.5px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 7.5rem !important;
+  font-weight: normal;
+  color: $color--main-text;
+  background-color: $color--background;
+  font-family: $main-font, 'Segoe UI', 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', serif, serif !important;
+}

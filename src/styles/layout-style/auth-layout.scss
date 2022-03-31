@@ -1,0 +1,18 @@
+.auth-layout {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.auth-layout .auth-bg-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.auth-layout .logo {
+    position: absolute;
+    top: 29px;
+    right: 64px;
+}
