@@ -1,0 +1,100 @@
+@mixin medium-16 {
+  /* 16 medium */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* Text */
+
+  color: #1E0D03;
+
+  opacity: 0.7;
+}
+
+@mixin bold-24() {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: $color--main-text;
+}
+
+@mixin semibold-16() {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  color: #1E0D03;
+  opacity: 0.8;
+}
+  // RESPONSIVE - MIN-WIDTH - ANTD- xs -sm -md - lg -xl - xxl
+  // USE: @include respond(xs-screen) {}
+  
+  @mixin respond($breakpoint) {
+  
+    // screen < 576px
+    @if $breakpoint==xs-screen {
+      @media only screen and (max-width: 576px) {
+        @content
+      }
+  
+      ;
+    }
+  
+    // screen ≥ 576px
+    @if $breakpoint==sm-screen {
+      @media only screen and (min-width: 576px) {
+        @content
+      }
+  
+      ;
+    }
+  
+    // screen ≥ 768px
+    @if $breakpoint==md-screen {
+      @media only screen and (min-width: 768px) {
+        @content
+      }
+  
+      ;
+    }
+  
+    // screen ≥ 992px
+    @if $breakpoint==lg-screen {
+      @media only screen and (min-width: 992px) {
+        @content
+      }
+  
+      ;
+    }
+  
+    // screen ≥ 1200px
+    @if $breakpoint==xl-screen {
+      @media only screen and (min-width: 1024px) {
+        @content
+      }
+  
+      ;
+    }
+  
+    // screen ≥ 1600px
+    @if $breakpoint==xxl-screen {
+      @media only screen and (min-width: 1600px) {
+        @content
+      }
+  
+      ;
+    }
+  }
